@@ -1,5 +1,5 @@
 <nav>
-  <li>
+  <!-- <li>
     <a routerLink="/">
       Home
     </a>
@@ -13,5 +13,29 @@
     <a routerLink="/app2">
       App 2
     </a>
+  </li> -->
+
+
+<ul>
+  <li><a routerLink="/">Home</a></li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" routerLink="/app1">MF1</a>
+    <div class="dropdown-content">
+      <a routerLink="/app1/home">Component Home</a>
+    </div>
   </li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" routerLink="/app2">MF2</a>
+    <div class="dropdown-content">
+      <a routerLink="/app2/component1">Component 1</a>
+    </div>
+  </li>
+
+</ul>
 </nav>
+<h3>Dropdown Menu inside a Navigation MF</h3>
+<p>Click menu to navigate between microfrontends "Dropdown" link to see the dropdown menu.</p>
+<p>Navigation, MF1, MF2</p>

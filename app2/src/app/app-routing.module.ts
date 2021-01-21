@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { Component1Component } from './component1/component1.component';
 
 
 const routes: Routes = [
+  { path: 'component1', component: Component1Component },
   { path: '**', component: EmptyRouteComponent },
 ];
 
